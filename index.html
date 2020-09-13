@@ -26,9 +26,9 @@
 
 <!--IMAGE SLIDE -->
 
-<h2 class="w3-center">Automatic Slideshow</h2>
+<h2 class="center">Automatic Slideshow</h2>
 
-<div class="w3-content w3-section">
+<div class="content section">
   <img class="slide" src="1.jpg">
   <img class="slide" src="2.jpg">
   <img class="slide" src="b.png">
@@ -38,8 +38,8 @@
 
 
 <!--SLIDE LEFT RIGHT ARROW CODE-->
- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+ <button class="slidebutton slideblack slidedisplay-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="slidebutton slideblack slidedisplay-right" onclick="plusDivs(1)">&#10095;</button>
 </div>
 <!--END OF LEFT RIGHT ARROW CODE-->
 
@@ -69,11 +69,43 @@
             </div>
          </div>
     </div>
+    <!-- end of CATEGORY SECTION-->
     <div>
     	product list
+
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="2.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="1.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="4.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="5.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+
     </div>
  </section>
-<!--CATEGORY SECTION-->
+
 <div class="footer">
   <p>Footer</p>
 </div>
